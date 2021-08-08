@@ -2,7 +2,6 @@ package wallet
 
 import (
 	"net/http"
-	"time"
 )
 
 type RequestForDepositHistories struct {
@@ -21,9 +20,9 @@ type History struct {
 	Confirmations int `json:"confirmations"`
 	ID            int `json:"id"`
 
-	ConfirmedTime time.Time `json:"confirmedTime"`
-	SentTime      time.Time `json:"sentTime"`
-	Time          time.Time `json:"time"`
+	ConfirmedTime string `json:"confirmedTime"`
+	SentTime      string `json:"sentTime"`
+	Time          string `json:"time"`
 }
 
 func (req *RequestForDepositHistories) Path() string {

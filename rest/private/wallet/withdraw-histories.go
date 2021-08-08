@@ -2,7 +2,6 @@ package wallet
 
 import (
 	"net/http"
-	"time"
 )
 
 type RequestForWithdrawHistories struct {
@@ -20,7 +19,7 @@ type Withdraw struct {
 	Fee  float64 `json:"fee"`
 	Size float64 `json:"size"`
 
-	Time time.Time `json:"time"`
+	Time string `json:"time"`
 
 	ID int `json:"id"`
 }
