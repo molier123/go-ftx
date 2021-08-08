@@ -12,11 +12,11 @@ import (
 	"time"
 
 	"github.com/buger/jsonparser"
-	"github.com/go-numb/go-ftx/rest/private/fills"
-	"github.com/go-numb/go-ftx/rest/private/orders"
-	"github.com/go-numb/go-ftx/rest/public/markets"
-	"github.com/go-numb/go-ftx/types"
 	"github.com/gorilla/websocket"
+	"github.com/molier123/go-ftx/rest/private/fills"
+	"github.com/molier123/go-ftx/rest/private/orders"
+	"github.com/molier123/go-ftx/rest/public/markets"
+	"github.com/molier123/go-ftx/types"
 )
 
 const (
