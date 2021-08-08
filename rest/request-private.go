@@ -74,8 +74,8 @@ func (p *Client) DepositHistories(req *wallet.RequestForDepositHistories) (*wall
 	return results, nil
 }
 
-func (p *Client) WithdrawHistories(req *wallet.RequestForWithdrawHistories) (*wallet.ResponseForWithdrawHistories, error) {
-	results := new(wallet.ResponseForWithdrawHistories)
+func (p *Client) WithdrawHistories(req *wallet.RequestForWithdrawHistories) (*[]wallet.Withdraw, error) {
+	results := new([]wallet.Withdraw)
 	if err := p.request(req, results); err != nil {
 		return nil, err
 	}
