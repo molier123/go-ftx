@@ -18,7 +18,7 @@ type Withdraw struct {
 	Txid    string `json:"txid"`
 
 	Fee  float64 `json:"fee"`
-	Size float64 `json:"size,string"`
+	Size float64 `json:"string"`
 
 	Time time.Time `json:"time"`
 
