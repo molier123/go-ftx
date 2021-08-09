@@ -23,9 +23,9 @@ type Fill struct {
 	Liquidity string `json:"liquidity"`
 
 	// only rest follow 2factor
-	BaseCurrency  string `json:"baseCurrency"`
-	QuoteCurrency string `json:"quoteCurrency"`
-	FeeCurrency   string `json:"feeCurrency"`
+	//BaseCurrency  string `json:"baseCurrency"`
+	//QuoteCurrency string `json:"quoteCurrency"`
+	//FeeCurrency   string `json:"feeCurrency"`
 
 	Side string `json:"side"`
 
